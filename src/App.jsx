@@ -1,12 +1,8 @@
 import * as React from 'react'
-import './components/PageNavigation'
+import './components/navbar/PageNavigation'
 import './App.css'
-import PageNavigation from './components/PageNavigation'
+import PageNavigation from './components/navbar/PageNavigation'
 
-function App() {
-  return (
-    <PageNavigation/>
-    )
-}
+const App = () => <PageNavigation/>
 
 export default App
