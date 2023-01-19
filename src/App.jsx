@@ -1,8 +1,13 @@
-import * as React from 'react'
-import './components/navbar/PageNavigation'
-import './App.css'
-import PageNavigation from './components/navbar/PageNavigation'
+import './App.css';
+import Sidebar from './components/pageNavigation/Sidebar';
 
-const App = () => <PageNavigation/>
 
-export default App
+const App = () => {
+  return (
+    <div>
+      <Sidebar/>
+    </div>
+  )
+}
+
+export default App;
