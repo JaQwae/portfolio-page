@@ -5,32 +5,33 @@ import SideNav, {
     NavText
 } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
-import '../../assets/pageNavigation/sidebar.css';
+import '../../assets/pageNavigation/sideNavbar.css';
 
 const SideNavBar = () => {
     return <SideNav
         onSelect={selected=> {
             console.log(selected);
         }}
+        className='side-nav-bar'
 
     >
         <SideNav.Toggle />
         <SideNav.Nav defaultSelected='home'>
             <NavItem eventKey='home'>
                 <NavIcon>
-                    <i className='fa fa-fw fa-home side-bar-icons'/>
+                    <i className='side-nav-bar-icon fa fa-fw fa-home'/>
                 </NavIcon>
                 <NavText>Home</NavText>
             </NavItem>
             <NavItem eventKey='about-me'>
                 <NavIcon>
-                    <i className='fa-solid fa-address-card side-bar-icons'/>
+                    <i className='side-nav-bar-icon fa-solid fa-address-card '/>
                 </NavIcon>
                 <NavText>About Me</NavText>
             </NavItem>
             <NavItem eventKey='experience'>
                 <NavIcon>
-                    <i className='fa-solid fa-briefcase side-bar-icons'/>
+                    <i className='side-nav-bar-icon fa-solid fa-briefcase'/>
                 </NavIcon>
                 <NavText>Experience</NavText>
                     <NavItem eventKey='portfolio'>
@@ -43,7 +44,7 @@ const SideNavBar = () => {
             </NavItem>
             <NavItem eventKey='connect'>
                 <NavIcon>
-                    <i className='fa-sharp fa-solid fa-circle-nodes side-bar-icons'/>
+                    <i className='side-nav-bar-icon fa-sharp fa-solid fa-circle-nodes'/>
                 </NavIcon>
                 <NavText>Connect</NavText>
             </NavItem>
