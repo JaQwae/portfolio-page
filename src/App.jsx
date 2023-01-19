@@ -1,11 +1,11 @@
 import './App.css';
-import Sidebar from './components/pageNavigation/Sidebar';
+import SideNavBar from './components/pageNavigation/SideNavBar';
 
 
 const App = () => {
   return (
     <div>
-      <Sidebar/>
+      <SideNavBar/>
     </div>
   )
 }
