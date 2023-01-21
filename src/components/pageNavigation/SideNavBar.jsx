@@ -5,12 +5,16 @@ import SideNav, {
     NavText
 } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import { useNavigate } from 'react-router-dom';
 import '../../assets/pageNavigation/sideNavbar.css';
 
 const SideNavBar = () => {
+    
+    const navigate = useNavigate();
+
     return <SideNav
         onSelect={selected=> {
-            console.log(selected);
+            navigate('/'+selected);
         }}
         className='side-nav-bar'
 

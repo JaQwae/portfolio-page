@@ -1,1 +1,7 @@
-
+/* temporary all page styles */
+.page {
+    text-align: center;
+    font-size: 5em;
+    /* styling if you do not want items center */
+    /* padding-left: 5rem; */
+}
