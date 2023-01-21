@@ -8,11 +8,13 @@ import Resume from './pages/Resume';
 import Connect from './pages/Connect';
 
 
+
 const App = () => {
   return (
     <Router>
       <SideNavBar/>
       <Routes>
+        <Route path='/' element ={<Home/>} />
         <Route path='/home' element ={<Home/>} />
         <Route path='/about-me' element ={<AboutMe/>} />
         <Route path='/portfolio' element ={<Portfolio/>} />
