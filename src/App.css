@@ -5,3 +5,8 @@
     /* styling if you do not want items center */
     /* padding-left: 5rem; */
 }
+
+/* all title of the page */
+h1 {
+    color: white;
+}

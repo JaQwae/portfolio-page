@@ -6,7 +6,7 @@ import SideNav, {
 } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { useNavigate } from 'react-router-dom';
-import '../../assets/pageNavigation/sideNavbar.css';
+import '../assets/styles/sideNavBar.css';
 
 const SideNavBar = () => {
     
