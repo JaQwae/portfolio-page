@@ -11,6 +11,8 @@ const ParticlesBackground = () => {
 
     const particlesLoaded = useCallback(async (container) => {
         await console.log(container)
+        //<DarkMode />;  this exported button needs a onclick to change below loadtheme either light or dark
+        container.loadTheme("dark") //either dark or light
     }, []);
 
     return (
