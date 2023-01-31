@@ -6,7 +6,24 @@
     /* padding-left: 5rem; */
 }
 
-/* all title of the page */
-h1 {
-    color: red;
+/* occurs when light mode is active */
+.light {
+    /* all text in div pages */
+    color:black
+}
+
+/* occurs when dark mode is active */
+.dark {
+    /* all text in div pages */
+    color: white
+}
+
+/* whole nav bar*/
+.side-nav-bar {
+    background-color:transparent;
+}
+
+/* all icons */
+.side-nav-bar-icon {
+    font-size: 1.5rem;
 }

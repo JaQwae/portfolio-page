@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import ParticlesBackground from './components/ParticlesBackground';
 import SideNavBar from './components/SideNavBar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -7,7 +8,6 @@ import AboutMe from './components/pages/AboutMe';
 import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Connect from './components/pages/Connect';
-import { useState } from 'react';
 
 
 
