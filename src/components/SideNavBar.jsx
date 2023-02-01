@@ -8,7 +8,7 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { useNavigate } from 'react-router-dom';
 import '../assets/styles/sideNavBar.css';
 
-const SideNavBar = () => {
+const SideNavBar = (theme) => {
     
     const navigate = useNavigate();
 

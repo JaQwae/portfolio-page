@@ -1,9 +1,9 @@
-/* temporary all page styles */
-.page {
-    text-align: center;
-    font-size: 5em;
-    /* styling if you do not want items center */
-    /* padding-left: 5rem; */
+:root {
+    --white: #FFFFFF;
+    --sandy-brown: #F2A359;
+    --rhythm: #7D84B2;
+    --space-cadet: #192A51;
+    --raisin-black: #2D2D34
 }
 
 /* occurs when light mode is active */
@@ -18,12 +18,33 @@
     color: white
 }
 
-/* whole nav bar*/
-.side-nav-bar {
-    background-color:transparent;
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1em;
+    /* styling if you do not want items center */
+    /* padding-left: 5rem; */
 }
 
-/* all icons */
-.side-nav-bar-icon {
-    font-size: 1.5rem;
+.html-tag {
+    margin: 0;
+}
+
+#home-page-greeting{
+    padding: 0;
+}
+
+/* ---Connection Page--- */
+
+/* connect page format */
+#connect-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#connect-page-form {
+    display: flex;
+    flex-direction: column;
 }
