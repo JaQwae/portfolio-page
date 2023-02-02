@@ -53,14 +53,14 @@ const App = () => {
       
       <ThemeProvider theme={isDark?createTheme(light):createTheme(dark)}>
         <Router>
-          <SideNavBar theme={`${theme}`}/>
+          <SideNavBar />
           <Routes>
             <Route path='/' element ={<Home/>} />
             <Route path='/home' element ={<Home/>} />
             <Route path='/about-me' element ={<AboutMe/>} />
             <Route path='/portfolio' element ={<Portfolio/>} />
             <Route path='/resume' element ={<Resume/>} />
-            <Route path='/connect' element ={<Connect/>} />
+            <Route path='/connect' element ={<Connect theme={`${theme}`}/>} />
           </Routes>
         </Router>
         <Brightness6OutlinedIcon onClick={toggleTheme} className="position-absolute top-0 end-0 theme-icon-button"/ >

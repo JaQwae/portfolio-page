@@ -1,14 +1,30 @@
-const Connect = () => {
+const Connect = (theme) => {
     return (
         <div className='page' id='connect-page'>
             <h1 id='connect-page-title'>Connect With Me</h1>
-            <form id='connect-page-form'>
-                <label for='name'>Name:</label>
-                <input type='text' id='name' name='name'></input>
-                <label for='email'>Email:</label>
-                <input type='email' id='email' name='email'></input>
-                <label for='message'>Message:</label>
+            <form id={`connect-page-form-${theme.theme}`} className='connect-form-layout'>
+                <section class='contact-form-two-box-row-container'>
+                    <div class='contact-form-two-box-row-container-item'>
+                        <input type='text' id='fname' name='fname'></input>
+                        <label htmlFor='fname'>First name</label>
+                    </div>
+                    <div class='contact-form-two-box-row-container-item'>
+                        <input type='text' id='lname' name='lname'></input>
+                        <label htmlFor='lname'>Last name</label>
+                    </div>
+                </section>
+                <section class='contact-form-two-box-row-container'>
+                    <div class='contact-form-two-box-row-container-item'>
+                        <input type='email' id='email' name='email'></input>
+                        <label htmlFor='email'>Email</label>
+                    </div>
+                    <div class='contact-form-two-box-row-container-item'>
+                        <input type='text' id='phone-number' name='phone-number'></input>
+                        <label htmlFor='phone-number'>Phone</label>
+                    </div>
+                </section>
                 <input type='text' id='message' name='message'></input>
+                <label htmlFor='message'>Message</label>
                 <input type="submit" value="Submit"></input>
             </form>
         </div>

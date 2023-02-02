@@ -1,21 +1,25 @@
+/* ---Global variables--- */
 :root {
-    --white: #FFFFFF;
-    --sandy-brown: #F2A359;
-    --rhythm: #7D84B2;
-    --space-cadet: #192A51;
-    --raisin-black: #2D2D34
+    /* dark colors scheme */
+    --primary-dark-color: #2D2D34;
+    --secondary-dark-color: #7D84B2;
+    --tertiary-dark-color: #fbfff1;
+    /* light colors scheme */
+    --primary-light-color: #FEF8DD;
+    --secondary-light-color: #25CED1;
+    --tertiary-light-color: #856d4d;
 }
 
-/* occurs when light mode is active */
+/* ---All Pages--- */
+
+/* light mode settings for every page*/
 .light {
-    /* all text in div pages */
-    color:black
+    color: var(--tertiary-light-color);
 }
 
-/* occurs when dark mode is active */
+/* dark mode settings for every page */
 .dark {
-    /* all text in div pages */
-    color: white
+    color: var(--tertiary-dark-color);
 }
 
 .page {
@@ -27,6 +31,8 @@
     /* styling if you do not want items center */
     /* padding-left: 5rem; */
 }
+
+/* ---Home Page--- */
 
 .html-tag {
     margin: 0;
@@ -44,7 +50,42 @@
     flex-direction: column;
 }
 
-#connect-page-form {
+#connect-page-title{
+    margin-bottom: 6rem;
+}
+
+.connect-form-layout{
     display: flex;
     flex-direction: column;
+    padding: 5rem;
+    width: 70%;
+    border-radius: 15px;
 }
+
+.connect-form-layout input {
+    margin-top: 1rem;
+}
+
+/* formatting for both items in a two row column */
+.contact-form-two-box-row-container{
+    display:flex;
+}
+
+/* formating for each item that is in a two row column */
+.contact-form-two-box-row-container-item{
+    display:flex;
+    flex-direction: column;
+}
+
+/* connect form light */
+#connect-page-form-light{
+    background-color: var(--secondary-light-color);
+}
+
+/* connect form dark */
+#connect-page-form-dark{
+    background-color: var(--secondary-dark-color);
+    box-shadow: 0px 5px 10px 0px rgba(125, 132, 178, 0.9)
+}
+
+/* Add media styling for form for phones */

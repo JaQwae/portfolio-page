@@ -9,15 +9,16 @@ const particlesConfig = {
       },
       options: {
         background: {
-          color: "transparent",
+          // primary light color
+          color: "#FEF8DD",
         },
         particles: {
           color: {
-            value: "#ff0000",
+            value: "transparent",
             animation: {
               h: {
                 count: 0,
-                enable: true,
+                enable: false,
                 offset: 0,
                 speed: 50,
                 decay: 0,
@@ -41,6 +42,10 @@ const particlesConfig = {
               },
             },
           },
+          links: {
+            // secondary light color
+            color: "#25CED1",
+          },
         },
       },
     },
@@ -52,15 +57,16 @@ const particlesConfig = {
       },
       options: {
         background: {
-          color: "#000",
+          // primary dark color
+          color: "#2D2D34",
         },
         particles: {
           color: {
-            value: "#ff0000",
+            value: "transparent",
             animation: {
               h: {
                 count: 0,
-                enable: true,
+                enable: false,
                 offset: 0,
                 speed: 50,
                 decay: 0,
@@ -83,6 +89,10 @@ const particlesConfig = {
                 sync: true,
               },
             },
+          },
+          links: {
+            // secondary dark color
+            color: "#7D84B2",
           },
         },
       },
