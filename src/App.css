@@ -77,7 +77,7 @@
 }
 
 /* formatting for each item that is in a two row column */
-.contact-form-two-box-row-container-item{
+.form-sections{
     display:flex;
     flex-direction: column;
     flex-grow: 2;
