@@ -14,25 +14,83 @@ const Connect = (theme) => {
         const inputType = target.name;
         const inputValue = target.value;
         
+        switch(inputType) {
+            case 'fname':
+                if (errorMessage) {
+                    setErrorMessage('');
+                }
+                setFname(inputValue);
+                break;
+            case 'lname':
+                if (errorMessage) {
+                    setErrorMessage('');
+                }
+                setLname(inputValue);
+                break;
+            case 'email':
+                if (errorMessage) {
+                    setErrorMessage('');
+                }
+                setEmail(inputValue);
+                break;
+            case 'phone':
+                if (errorMessage) {
+                    setErrorMessage('');
+                }
+                setPhone(inputValue);
+                break;
+            default:
+                if (errorMessage) {
+                    setErrorMessage('');
+                }
+                setMessage(inputValue);
+                break;
+        }
+    }
 
-        if (inputType === 'fname') {
-            setFname(inputValue);
-        };
-        if (inputType === 'lname') {
-            setLname(inputValue);
-        };
-        if (inputType === 'email') {
-            setEmail(inputValue);
-        };
-        if (inputType === 'phone') {
-            setPhone(inputValue);
-        };
-        if (inputType === 'message') {
-            setMessage(inputValue);
-        };
+    // occurs when nothing is type in the input box
+    const handleIncompleteInput = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
 
-        console.log(inputType)
-        console.log(inputValue)
+        switch(inputType) {
+            case 'fname':
+                if (inputValue ==='') {
+                    setErrorMessage('Please enter your first name.');
+                    return
+                }
+                setFname(inputValue);
+                break;
+            case 'lname':
+                if (inputValue === '') {
+                    setErrorMessage('Please enter your last name.');
+                    return
+                }
+                setLname(inputValue);
+                break;
+            case 'email':
+                if (inputValue === '') {
+                    setErrorMessage('Please enter an email.');
+                    return
+                }
+                setEmail(inputValue);
+                break;
+            case 'phone':
+                if (inputValue === '') {
+                    setErrorMessage('Please enter a phone number.');
+                    return
+                }
+                setPhone(inputValue);
+                break;
+            default:
+                if (inputValue === '') {
+                    setErrorMessage('Please enter a message.');
+                    return
+                }
+                setMessage(inputValue);
+                break;
+        }
     }
 
     // occurs after the submit button is entered
@@ -45,10 +103,10 @@ const Connect = (theme) => {
         } else if (!lname) {
             setErrorMessage('Please enter your last name.');
             return;
-        } else if (!email){
+        } else if (!email) {
             setErrorMessage('Please enter an email.');
             return;
-        } else if(!phone){
+        } else if(!phone) {
             setErrorMessage('Please enter a phone number.');
             return;
         } else if (!message) {
@@ -77,6 +135,7 @@ const Connect = (theme) => {
                             name='fname' 
                             id='fname'
                             onChange= {handleInputChange}
+                            onBlur= {handleIncompleteInput}
                             className={`all-input-boxes all-input-boxes-${theme.theme}`}
                             type='text'
                             value= {fname}
@@ -88,6 +147,7 @@ const Connect = (theme) => {
                             name='lname'
                             id='lname'
                             onChange= {handleInputChange}
+                            onBlur= {handleIncompleteInput}
                             className={`all-input-boxes all-input-boxes-${theme.theme}`}
                             type='text'
                             value= {lname}
@@ -101,6 +161,7 @@ const Connect = (theme) => {
                             name='email' 
                             id='email'
                             onChange= {handleInputChange}
+                            onBlur= {handleIncompleteInput}
                             className={`all-input-boxes all-input-boxes-${theme.theme}`}
                             type='email'
                             value={email}
@@ -112,6 +173,7 @@ const Connect = (theme) => {
                             name='phone' 
                             id='phone'
                             onChange= {handleInputChange}
+                            onBlur= {handleIncompleteInput}
                             className={`all-input-boxes all-input-boxes-${theme.theme}`}
                             type='text'
                             value={phone}
@@ -124,6 +186,7 @@ const Connect = (theme) => {
                         name='message' 
                         id='message'
                         onChange= {handleInputChange}
+                        onBlur= {handleIncompleteInput}
                         className={`all-input-boxes all-input-boxes-${theme.theme}`}
                         type='text'
                         value={message}
@@ -131,6 +194,7 @@ const Connect = (theme) => {
                     <label htmlFor='message'>Message</label>
                     <button 
                         onClick={handleFormSubmit}
+                        onBlur= {handleIncompleteInput}
                         value="Submit"
                         type="button" 
                     >Submit</button>
