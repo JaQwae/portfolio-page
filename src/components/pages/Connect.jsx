@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { validateEmail } from "../../utils/validate-email";
 
 const Connect = (theme) => {
     const [fname, setFname] = useState('');
@@ -103,8 +104,8 @@ const Connect = (theme) => {
         } else if (!lname) {
             setErrorMessage('Please enter your last name.');
             return;
-        } else if (!email) {
-            setErrorMessage('Please enter an email.');
+        } else if (!validateEmail(email)) {
+            setErrorMessage('Please enter an email using the following format: johndoe@email.com .');
             return;
         } else if(!phone) {
             setErrorMessage('Please enter a phone number.');
@@ -113,6 +114,7 @@ const Connect = (theme) => {
             setErrorMessage('Please enter a message.');
             return;
         } else {
+            // occurs after successful submission
             alert(`Hello ${fname} ${lname},thank you for submitting a connection form! I look forward to connecting with you!`);
 
             // clears all inputs
@@ -194,7 +196,6 @@ const Connect = (theme) => {
                     <label htmlFor='message'>Message</label>
                     <button 
                         onClick={handleFormSubmit}
-                        onBlur= {handleIncompleteInput}
                         value="Submit"
                         type="button" 
                     >Submit</button>
