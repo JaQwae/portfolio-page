@@ -62,18 +62,27 @@
 .connect-form-layout{
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 5rem;
     width: 40%;
     border-radius: 15px;
 }
 
+/* all input boxes + submit button */
 .connect-form-layout input {
     margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+
+.all-input-boxes {
+    border-radius: 10px;
+    /* background-color: var(--primary-light-color); */
 }
 
 /* formatting for both items in a two row column */
 .contact-form-two-box-row-container{
     display:flex;
+    flex-wrap: wrap;
 }
 
 /* formatting for each item that is in a two row column */
@@ -84,16 +93,30 @@
     padding: 1rem;
 }
 
+#message {
+    height: 6rem;
+}
+
 /* connect form light */
 #connect-page-form-light{
     background-color: var(--secondary-light-color-container);
     box-shadow: var(--box-shadow-format) var(--tertiary-light-color-container-shadow);
 }
 
+
+.all-input-boxes-light{
+    background-color: var(--primary-light-color);
+}
+
 /* connect form dark */
 #connect-page-form-dark{
     background-color: var(--secondary-dark-color-container);
     box-shadow: var(--box-shadow-format) var(--tertiary-dark-color-container-shadow);
+}
+
+
+.all-input-boxes-dark{
+    background-color: var(--tertiary-dark-color);
 }
 
 /* Add media styling for form for phones */
