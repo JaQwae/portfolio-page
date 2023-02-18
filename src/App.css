@@ -3,13 +3,13 @@
     /* dark colors scheme */
     --primary-dark-color: #2D2D34;
     --secondary-dark-color: #7D84B2;
-    --secondary-dark-color-container: rgba(125, 132, 178, 0.7);
+    /* --secondary-dark-color-container: rgba(125, 132, 178, 0.7); */
     --tertiary-dark-color: #fbfff1;
     --tertiary-dark-color-container-shadow:rgba(251, 255, 241, 0.6);
     /* light colors scheme */
     --primary-light-color: #FEF8DD;
     --secondary-light-color: #25CED1;
-    --secondary-light-color-container: rgba(37, 206, 209, 0.7);
+    /* --secondary-light-color-container: rgba(37, 206, 209, 0.7); */
     --tertiary-light-color: #856d4d;
     --tertiary-light-color-container-shadow:rgba(133, 109, 77, 0.6);
     /* box shadow */
@@ -180,7 +180,7 @@
 
 /* connect form light */
 #connect-page-form-light{
-    background-color: var(--secondary-light-color-container);
+    background-color: var(--primary-light-color);
     box-shadow: var(--box-shadow-light);
 }
 
@@ -190,12 +190,73 @@
 
 /* connect form dark */
 #connect-page-form-dark{
-    background-color: var(--secondary-dark-color-container);
+    background-color: var(--primary-dark-color);
     box-shadow: var(--box-shadow-dark);
 }
 
 .all-input-boxes-dark{
     background-color: var(--tertiary-dark-color);
+}
+
+.connect-form-submit-button{
+    border: 0.2em solid;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    overflow: hidden;
+}
+
+#connect-form-submit-button-dark{
+    background-color: var(--secondary-dark-color);
+    color: var(--tertiary-dark-color);
+    border-color:var(--tertiary-dark-color);
+}
+
+#connect-form-submit-button-light{
+    background-color: var(--secondary-light-color);
+    color: var(--tertiary-light-color);
+    border-color:var(--tertiary-light-color);
+}
+
+#connect-form-submit-button-dark span{
+    background-color: var(--primary-dark-color);
+}
+
+#connect-form-submit-button-light span{
+    background-color: var(--primary-light-color);
+}
+
+.connect-form-submit-button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    transform: translateY(150%);
+    border-radius:25%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: 0;
+}
+.connect-form-submit-button:hover span {
+    transform: translateY(0) scale(2);
+}
+.connect-form-submit-button span:nth-child(1) {
+    --n: 1;
+}
+.connect-form-submit-button span:nth-child(2) {
+    --n: 2;
+}
+.connect-form-submit-button span:nth-child(3) {
+    --n: 3;
+}
+.connect-form-submit-button span:nth-child(4) {
+    --n: 4;
+}
+
+#connect-form-error-message{
+    color: red;
+    text-align: center;
 }
 
 /* Add media styling for form for phones */

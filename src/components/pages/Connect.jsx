@@ -198,10 +198,15 @@ const Connect = (theme) => {
                         onClick={handleFormSubmit}
                         value="Submit"
                         type="button" 
-                    >Submit</button>
+                        className="connect-form-submit-button"
+                        id={`connect-form-submit-button-${theme.theme}`}
+                    >
+                        Submit
+                        <span></span><span></span><span></span><span></span>
+                    </button>
                 </section>
                 <section className='connect-form-error-message-container'>
-                    <p id={`connect-form-error-message-${theme.theme}`}>
+                    <p id={'connect-form-error-message'}>
                         {errorMessage}
                     </p>
                 </section>
