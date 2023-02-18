@@ -60,6 +60,44 @@
 .social-media-icons{
     padding: 1rem;
     font-size: 2rem;
+    border-radius: 50%;
+    /* used for hover animation on social icons */
+    position: relative;
+    overflow: hidden;
+}
+
+/* used for hover animation on social icons */
+.social-media-icons span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+#social-media-icons-dark span{
+    background-color: var(--secondary-dark-color);
+}
+#social-media-icons-light span{
+    background-color: var(--secondary-light-color);
+}
+.social-media-icons:hover span {
+    transform: translateY(0) scale(2);
+}
+.social-media-icons span:nth-child(1) {
+    --n: 1;
+}
+.social-media-icons span:nth-child(2) {
+    --n: 2;
+}
+.social-media-icons span:nth-child(3) {
+    --n: 3;
+}
+.social-media-icons span:nth-child(4) {
+    --n: 4;
 }
 
 #social-media-icons-dark{

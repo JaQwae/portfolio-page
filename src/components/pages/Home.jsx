@@ -20,9 +20,24 @@ const Home = (theme) => {
                     {/* <p className='html-tag'>&lt;/p&gt;</p> */}
                 </section>
                 <section className="social-media-icon-container">
-                    <a href="https://www.linkedin.com/in/jaqwae-ellison/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-linkedin social-media-icons" id={`social-media-icons-${theme.theme}`}></i></a>
-                    <a href="https://github.com/JaQwae" rel="noreferrer noopener"><i className="fa-brands fa-github social-media-icons" id={`social-media-icons-${theme.theme}`}></i></a>
-                    <a href=""><i className="fa-brands fa-twitter social-media-icons" id={`social-media-icons-${theme.theme}`}></i></a>
+                    <a href="https://www.linkedin.com/in/jaqwae-ellison/" target="_blank" rel="noreferrer noopener">
+                        <i className="fa-brands fa-linkedin social-media-icons" id={`social-media-icons-${theme.theme}`}>
+                            {/* Gives hover animation over links */}
+                            <span></span><span></span><span></span><span></span>
+                        </i>
+                    </a>
+                    <a href="https://github.com/JaQwae" rel="noreferrer noopener">
+                        <i className="fa-brands fa-github social-media-icons" id={`social-media-icons-${theme.theme}`}>
+                            {/* Gives hover animation over links */}
+                            <span></span><span></span><span></span><span></span>
+                        </i>
+                    </a>
+                    <a href="">
+                        <i className="fa-brands fa-twitter social-media-icons" id={`social-media-icons-${theme.theme}`}>
+                            {/* Gives hover animation over links */}
+                            <span></span><span></span><span></span><span></span>
+                        </i>
+                    </a>
                 </section>
             </div>
             {/* <section id='bottom-html-design'>
