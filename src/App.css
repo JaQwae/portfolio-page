@@ -1,6 +1,5 @@
 /* ---Global variables--- */
 :root {
-    --box-shadow-format: 0px 5px 10px 0px;
     /* dark colors scheme */
     --primary-dark-color: #2D2D34;
     --secondary-dark-color: #7D84B2;
@@ -13,6 +12,10 @@
     --secondary-light-color-container: rgba(37, 206, 209, 0.7);
     --tertiary-light-color: #856d4d;
     --tertiary-light-color-container-shadow:rgba(133, 109, 77, 0.6);
+    /* box shadow */
+    --box-shadow-format: 0px 5px 10px 0px;
+    --box-shadow-dark: var(--box-shadow-format) var(--tertiary-dark-color-container-shadow);
+    --box-shadow-light: var(--box-shadow-format) var(--tertiary-light-color-container-shadow);
 }
 
 /* ---All Pages--- */
@@ -47,6 +50,27 @@
     padding: 0;
 }
 
+/* ---Resume Page--- */
+
+.resume-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-container{
+    width:50%;
+    height:80%;
+}
+
+#resume-container-dark{
+    background-color: var(--secondary-dark-color-container);
+    box-shadow: var(--box-shadow-dark);
+}
+
+#resume-container-light{
+    box-shadow: var(--box-shadow-light);
+}
+
 /* ---Connection Page--- */
 
 /* connect page format */
@@ -72,7 +96,6 @@
     margin-top: 1rem;
     padding: 0.5rem;
 }
-
 
 .all-input-boxes {
     border-radius: 10px;
@@ -100,9 +123,8 @@
 /* connect form light */
 #connect-page-form-light{
     background-color: var(--secondary-light-color-container);
-    box-shadow: var(--box-shadow-format) var(--tertiary-light-color-container-shadow);
+    box-shadow: var(--box-shadow-light);
 }
-
 
 .all-input-boxes-light{
     background-color: var(--primary-light-color);
@@ -111,9 +133,8 @@
 /* connect form dark */
 #connect-page-form-dark{
     background-color: var(--secondary-dark-color-container);
-    box-shadow: var(--box-shadow-format) var(--tertiary-dark-color-container-shadow);
+    box-shadow: var(--box-shadow-dark);
 }
-
 
 .all-input-boxes-dark{
     background-color: var(--tertiary-dark-color);

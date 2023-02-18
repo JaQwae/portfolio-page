@@ -59,7 +59,7 @@ const App = () => {
             <Route path='/home' element ={<Home/>} />
             <Route path='/about-me' element ={<AboutMe/>} />
             <Route path='/portfolio' element ={<Portfolio/>} />
-            <Route path='/resume' element ={<Resume/>} />
+            <Route path='/resume' element ={<Resume theme={`${theme}`}/>} />
             <Route path='/connect' element ={<Connect theme={`${theme}`}/>} />
           </Routes>
         </Router>
