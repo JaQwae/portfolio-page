@@ -55,8 +55,8 @@ const App = () => {
         <Router>
           <SideNavBar />
           <Routes>
-            <Route path='/' element ={<Home/>} />
-            <Route path='/home' element ={<Home/>} />
+            <Route path='/' element ={<Home theme={`${theme}`}/>} />
+            <Route path='/home' element ={<Home theme={`${theme}`}/>} />
             <Route path='/about-me' element ={<AboutMe/>} />
             <Route path='/portfolio' element ={<Portfolio/>} />
             <Route path='/resume' element ={<Resume theme={`${theme}`}/>} />
