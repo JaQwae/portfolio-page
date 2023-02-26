@@ -14,12 +14,14 @@ export default function SingleProject (props) {
 
     return (
             <div className="singleProject" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {/* active when mouse is not over the element */}
                 <div className={`"non-hover-project-state" ${
                         !isHovering ? '' : 'hidden-project-state'
                     }`} >
                 <h4>{props.project.title}</h4>
                     <p>{props.project.image}</p>
                 </div>
+                {/* active when mouse is over the element */}
                 <div className={`hover-project-state ${
                         isHovering ? '' : 'hidden-project-state'
                     }`}>
