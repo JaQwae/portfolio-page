@@ -4,13 +4,16 @@ export const data = [
         category: "front-end",
         title: "project-1",
         image: "image-1",
-        gitHub: "link-1"
+        deployedLink: "d-link-1",
+        gitHubLink: "link-1"
     },
     {
         id: 2,
         category: "back-end",
         title: "project-2",
-        image: "image-2"
+        image: "image-2",
+        deployedLink: "d-link-2",
+        gitHubLink: "link-2"
     },
     {
         id: 3,

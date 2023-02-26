@@ -27,7 +27,6 @@ const Portfolio = () => {
         <div className='portfolio-page page'>
             <h1>Portfolio Page</h1>
             <ProjectList projects = {projects} handleButtonClick={handleButtonClick} />
-            
         </div>
     )
 };
