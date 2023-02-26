@@ -121,20 +121,14 @@
 }
 
 /* ---Portfolio Page--- */
-.singleProject {
-    background-color: var(--primary-dark-color);
-    box-shadow: var(--box-shadow-format);
-    padding: 3rem;
-    /* margin: 2rem; */
+.portfolio-page{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
-.singleProject:hover{
-    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 100%);
-}
-
-/* hide divs on portfolio page depending on mouse event */
-.hidden-project-state{
-    display: none;
+.portfolio-buttons{
+    margin-bottom: 4rem;
 }
 
 .project-container{
@@ -143,8 +137,52 @@
     gap: 4rem;
     /* margin: 5rem; */
 }
-/* ---Resume Page--- */
 
+.singleProject {
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-format);
+    height: 400px;
+    width: 400px;
+    padding: 0.5rem;
+}
+
+.project-title {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-images{
+    height: 330px;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* object-fit: cover; */
+}
+
+.singleProject:hover{
+    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 100%);
+}
+
+/* hides elements on portfolio page depending on mouse event */
+.hidden-project-state{
+    display: none;
+}
+
+.project-icons{
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.icon-link{
+    text-decoration: none;
+    color: var(--tertiary-dark-color);
+}
+
+/* ---Resume Page--- */
 .resume-page{
     display: flex;
     flex-direction: column;

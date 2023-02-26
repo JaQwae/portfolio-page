@@ -2,10 +2,11 @@ export const data = [
     {
         id: 1,
         category: "front-end",
-        title: "project-1",
-        image: "image-1",
-        deployedLink: "d-link-1",
-        gitHubLink: "link-1"
+        title: "Work-Day Scheduler",
+        image: "https://github.com/JaQwae/workday-scheduler/raw/main/images/workdayScreenshot.png",
+        altText: "Image of Work Day Application",
+        deployedLink: "https://jaqwae.github.io/workday-scheduler/",
+        gitHubLink: "https://github.com/JaQwae/workday-scheduler"
     },
     {
         id: 2,
