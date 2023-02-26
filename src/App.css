@@ -109,11 +109,35 @@
     color: var(--tertiary-light-color);
 }
 
-/* ---Portfolio Page--- */
-.singleProject {
+/* ---About Me Page--- */
+
+.about-me-location-content-container{
+    display: flex;
+}
+
+.location-map{
+    height: 20rem;
     box-shadow: var(--box-shadow-format);
 }
 
+/* ---Portfolio Page--- */
+.singleProject {
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-format);
+    padding: 3rem;
+    /* margin: 2rem; */
+}
+
+.singleProject:hover{
+    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 100%);
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    /* margin: 5rem; */
+}
 /* ---Resume Page--- */
 
 .resume-page{
