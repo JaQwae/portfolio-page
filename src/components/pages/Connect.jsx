@@ -120,7 +120,7 @@ const Connect = (theme) => {
     } else {
       // occurs after successful submission
       alert(
-        `Hello ${fname} ${lname},thank you for submitting a connection form! I look forward to connecting with you!`
+        `Hello ${fname} ${lname}, thank you for submitting a connection form! I look forward to connecting with you!`
       );
 
       emailjs
