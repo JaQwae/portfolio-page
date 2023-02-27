@@ -3,19 +3,21 @@
     /* dark colors scheme */
     --primary-dark-color: #2D2D34;
     --secondary-dark-color: #7D84B2;
-    /* --secondary-dark-color-container: rgba(125, 132, 178, 0.7); */
+    --secondary-dark-color-container: rgba(125, 132, 178, 0.7);
     --tertiary-dark-color: #fbfff1;
     --tertiary-dark-color-container-shadow:rgba(251, 255, 241, 0.6);
     /* light colors scheme */
     --primary-light-color: #FEF8DD;
     --secondary-light-color: #25CED1;
-    /* --secondary-light-color-container: rgba(37, 206, 209, 0.7); */
+    --secondary-light-color-container: rgba(37, 206, 209, 0.7);
     --tertiary-light-color: #856d4d;
     --tertiary-light-color-container-shadow:rgba(133, 109, 77, 0.6);
     /* box shadow */
     --box-shadow-format: 0px 5px 10px 0px;
-    --box-shadow-dark: var(--box-shadow-format) var(--tertiary-dark-color-container-shadow);
+    --box-shadow-dark: var(--box-shadow-format) var(--secondary-dark-color-container);
     --box-shadow-light: var(--box-shadow-format) var(--tertiary-light-color-container-shadow);
+    /* portfolio-spacing */
+    --portfolio-spacing: 4rem;
 }
 
 /* ---All Pages--- */
@@ -37,8 +39,6 @@
     align-items: center;
     height: 100vh;
     font-size: 1em;
-    /* styling if you do not want items center */
-    /* padding-left: 5rem; */
 }
 
 /* ---Home Page--- */
@@ -128,14 +128,13 @@
 }
 
 .portfolio-buttons{
-    margin-bottom: 4rem;
+    margin-bottom: var(--portfolio-spacing);
 }
 
 .project-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
-    /* margin: 5rem; */
+    gap: var(--portfolio-spacing);
 }
 
 .singleProject {
@@ -182,6 +181,11 @@
     color: var(--tertiary-dark-color);
 }
 
+.icon-link:hover{
+    text-decoration: none;
+    color: var(--primary-dark-color);
+}
+
 /* ---Resume Page--- */
 .resume-page{
     display: flex;
@@ -225,12 +229,11 @@
 /* all input boxes + submit button */
 .connect-form-layout input {
     margin-top: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .all-input-boxes {
-    border-radius: 10px;
-    /* background-color: var(--primary-light-color); */
+    border: none;
 }
 
 /* formatting for both items in a two row column */
@@ -259,6 +262,17 @@
 
 .all-input-boxes-light{
     background-color: var(--primary-light-color);
+    border-bottom: 3px solid var(--secondary-light-color);
+}
+
+#connect-form-submit-button-light{
+    background-color: var(--secondary-light-color);
+    color: var(--tertiary-light-color);
+    border-color:var(--tertiary-light-color);
+}
+
+#connect-form-submit-button-light span{
+    background-color: var(--primary-light-color);
 }
 
 /* connect form dark */
@@ -268,10 +282,12 @@
 }
 
 .all-input-boxes-dark{
-    background-color: var(--tertiary-dark-color);
+    background-color: var(--primary-dark-color);
+    border-bottom: 3px solid var(--secondary-dark-color);
 }
 
 .connect-form-submit-button{
+    margin: 2rem;
     border: 0.2em solid;
     border-radius: 0.5em;
     text-transform: uppercase;
@@ -286,18 +302,8 @@
     border-color:var(--tertiary-dark-color);
 }
 
-#connect-form-submit-button-light{
-    background-color: var(--secondary-light-color);
-    color: var(--tertiary-light-color);
-    border-color:var(--tertiary-light-color);
-}
-
 #connect-form-submit-button-dark span{
     background-color: var(--primary-dark-color);
-}
-
-#connect-form-submit-button-light span{
-    background-color: var(--primary-light-color);
 }
 
 .connect-form-submit-button span {
