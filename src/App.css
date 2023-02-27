@@ -197,11 +197,13 @@
     height:80%;
 }
 
+/* ---Resume page light--- */
 #resume-container-dark{
     background-color: var(--secondary-dark-color-container);
     box-shadow: var(--box-shadow-dark);
 }
 
+/* ---Resume page dark--- */
 #resume-container-light{
     box-shadow: var(--box-shadow-light);
 }
@@ -254,10 +256,10 @@
     height: 6rem;
 }
 
-/* connect form light */
+/* ---Contact page light--- */
 #connect-page-form-light{
     background-color: var(--primary-light-color);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--box-shadow-light);/* ---Resume page light--- */
 }
 
 .all-input-boxes-light{
@@ -275,7 +277,7 @@
     background-color: var(--primary-light-color);
 }
 
-/* connect form dark */
+/* ---Contact page dark--- */
 #connect-page-form-dark{
     background-color: var(--primary-dark-color);
     box-shadow: var(--box-shadow-dark);
