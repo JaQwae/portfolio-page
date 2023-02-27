@@ -287,13 +287,14 @@
 }
 
 .connect-form-submit-button{
-    margin: 2rem;
     border: 0.2em solid;
     border-radius: 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     position: relative;
     overflow: hidden;
+    width: 50%;
+    margin: 4rem auto 2rem
 }
 
 #connect-form-submit-button-dark{
