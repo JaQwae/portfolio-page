@@ -2,7 +2,7 @@ import { useState } from "react";
 import { data } from "../portfolio-data/data";
 import ProjectList from "../portfolio-data/ProjectList";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
 
     const projectData = {
         projects:data,
@@ -26,7 +26,7 @@ const Portfolio = () => {
     return (
         <div className='portfolio-page page'>
             <h1>Portfolio Page</h1>
-            <ProjectList projects = {projects} handleButtonClick={handleButtonClick} />
+            <ProjectList projects = {projects} theme = {props.theme} handleButtonClick={handleButtonClick} />
         </div>
     )
 };

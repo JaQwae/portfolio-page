@@ -57,8 +57,8 @@ const App = () => {
           <Routes>
             <Route path='/' element ={<Home theme={`${theme}`}/>} />
             <Route path='/home' element ={<Home theme={`${theme}`}/>} />
-            <Route path='/about-me' element ={<AboutMe/>} />
-            <Route path='/portfolio' element ={<Portfolio/>} />
+            <Route path='/about-me' element ={<AboutMe theme={`${theme}`}/>} />
+            <Route path='/portfolio' element ={<Portfolio theme={`${theme}`}/>} />
             <Route path='/resume' element ={<Resume theme={`${theme}`}/>} />
             <Route path='/connect' element ={<Connect theme={`${theme}`}/>} />
           </Routes>
