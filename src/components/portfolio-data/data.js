@@ -29,11 +29,11 @@ export const data = [
     {
         id: 4,
         category: "full-stack",
-        title: "project-4",
-        image: "image-4",
-        altText: "alt-text-4",
+        title: "Tech Blog",
+        image: "https://github.com/JaQwae/Tech-Blog/raw/main/images/techBlog%20Screenshot.png",
+        altText: "Tech Blog Application",
         deployedLink: "d-link-4",
-        gitHubLink: "link-4"
+        gitHubLink: "https://github.com/JaQwae/Tech-Blog"
     },
     {
         id: 5,
@@ -64,11 +64,11 @@ export const data = [
     },
     {
         id: 8,
-        category: "front-end",
-        title: "project-8",
+        category: "back-end",
+        title: "E-Commerce Backend",
         image: "image-8",
-        altText: "alt-text-8",
+        altText: "E-Commerce Backend Application",
         deployedLink: "d-link-8",
-        gitHubLink: "link-8"
+        gitHubLink: "https://github.com/JaQwae/E-commerce-Back-End"
     }
 ]
