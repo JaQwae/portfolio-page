@@ -18,6 +18,11 @@
     --box-shadow-light: var(--box-shadow-format) var(--tertiary-light-color-container-shadow);
     /* portfolio-spacing */
     --portfolio-spacing: 4rem;
+    /* button styling */
+    --button-radius: 0.5em;
+    --button-border: 0.2em solid;
+    --button-text-transform: uppercase;
+    --button-letter-spacing: 0.1em;
 }
 
 /* ---All Pages--- */
@@ -127,8 +132,16 @@
     width: 80%;
 }
 
-.portfolio-buttons{
+.portfolio-buttons-container{
     margin-bottom: var(--portfolio-spacing);
+}
+
+.portfolio-buttons{
+    margin: 1rem;
+    border: var(--button-border);
+    border-radius: var(--button-radius);
+    text-transform: var(--button-text-transform);
+    letter-spacing: var(--button-letter-spacing);
 }
 
 .project-container{
@@ -289,10 +302,11 @@
 }
 
 .connect-form-submit-button{
-    border: 0.2em solid;
-    border-radius: 0.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    margin: 1rem;
+    border: var(--button-border);
+    border-radius: var(--button-radius);
+    text-transform: var(--button-text-transform);
+    letter-spacing: var(--button-letter-spacing);
     position: relative;
     overflow: hidden;
     width: 50%;
