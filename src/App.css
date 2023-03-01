@@ -173,14 +173,18 @@
     object-fit: cover;
 }
 
-/* hides elements on portfolio page depending on mouse event */
+.hover-project-state{
+    text-align: center;
+}
+
+/* hides elements on portfolio page */
 .hidden-project-state{
     display: none;
 }
 
 .project-icons{
-    font-size: 4rem;
-    margin: 1rem;
+    font-size: 6rem;
+    margin: 8rem 2rem 2rem;
 }
 
 /* ---Portfolio Page Light--- */
