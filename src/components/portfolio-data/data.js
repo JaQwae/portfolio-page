@@ -14,7 +14,7 @@ export const data = [
         title: "Social Network API",
         image: "image-2",
         altText: "Social Network API Application",
-        deployedLink: "d-link-2",
+        deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Social-Network-API"
     },
     {
@@ -23,7 +23,7 @@ export const data = [
         title: "Note Taker",
         image: "image-3",
         altText: "Note Taker Application",
-        deployedLink: "d-link-3",
+        deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Note-Taker"
     },
     {
@@ -32,7 +32,7 @@ export const data = [
         title: "Tech Blog",
         image: "https://github.com/JaQwae/Tech-Blog/raw/main/images/techBlog%20Screenshot.png",
         altText: "Tech Blog Application",
-        deployedLink: "d-link-4",
+        deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Tech-Blog"
     },
     {
@@ -50,8 +50,8 @@ export const data = [
         title: "project-6",
         image: "image-6",
         altText: "alt-text-6",
-        deployedLink: "d-link-6",
-        gitHubLink: "link-6"
+        deployedLink: "",
+        gitHubLink: ""
     },
     {
         id: 7,
@@ -59,8 +59,8 @@ export const data = [
         title: "project-7",
         image: "image-7",
         altText: "alt-text-7",
-        deployedLink: "d-link-7",
-        gitHubLink: "link-7"
+        deployedLink: "",
+        gitHubLink: ""
     },
     {
         id: 8,
@@ -68,7 +68,7 @@ export const data = [
         title: "E-Commerce Backend",
         image: "image-8",
         altText: "E-Commerce Backend Application",
-        deployedLink: "d-link-8",
+        deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/E-commerce-Back-End"
     }
 ]

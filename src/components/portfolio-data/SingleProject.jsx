@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 export default function SingleProject (props) {
 
-    console.log(props.theme);
-
     const[isHovering, setIsHovering] = useState(false);
 
     function handleMouseEnter (e) {
@@ -13,6 +11,18 @@ export default function SingleProject (props) {
     function handleMouseLeave (e) {
         setIsHovering(false);
     };
+
+    // const[hasDeployedLink, setHasDeployedLink] = useState(true);
+
+    // function hasADeployedLink (props) {
+        // const deployedLink = props.project.deployedLink;
+    //     if (props.project.deployedLink !== '') {
+    //         setHasDeployedLink(true);
+    //     };
+    //     if (props.project.deployedLink === '') {
+    //         setHasDeployedLink(false);
+    //     };
+    // }
 
     return (
             <div className="single-project" id={`single-project-${props.theme}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -31,10 +41,24 @@ export default function SingleProject (props) {
                         isHovering ? '' : 'hidden-project-state'
                     }`}
                 >
-                    <a href={`${props.project.deployedLink}`} className={`icon-link icon-link-${props.theme}`} target="_blank" rel="noreferrer noopener">
+                    <a
+                    href={`${props.project.deployedLink}`}
+                    className={`icon-link icon-link-${props.theme} ${
+                        props.project.deployedLink ? '' : 'hidden-project-state'
+                    }`}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >
                         <i className="fa-regular fa-circle-play project-icons"></i>
                     </a>
-                    <a href={`${props.project.gitHubLink}`} className={`icon-link icon-link-${props.theme}`} target="_blank" rel="noreferrer noopener">
+                    <a
+                        href={`${props.project.gitHubLink}`} 
+                        className={`icon-link icon-link-${props.theme} ${
+                            props.project.gitHubLink ? '' : 'hidden-project-state'
+                        }`} 
+                        target="_blank" 
+                        rel="noreferrer noopener"
+                    >
                         <i className="fa-brands fa-github project-icons"></i>
                     </a>
                 </div>
