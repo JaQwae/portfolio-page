@@ -3,11 +3,9 @@ import SingleProject from "./SingleProject";
 
 export default function ProjectList (props) {
 
-    console.log(props.theme);
-
     return(
         <React.Fragment>
-            <div className= {`portfolio-buttons-container`}>
+            <div className= {`portfolio-buttons-container`} id={`portfolio-buttons-container-${props.theme}`}>
                 <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='all' onClick={props.handleButtonClick}>All</button>
                 <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='front-end' onClick={props.handleButtonClick}>Front-End</button>
                 <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='back-end' onClick={props.handleButtonClick}>Back-End</button>
@@ -16,7 +14,7 @@ export default function ProjectList (props) {
 
             <div className="project-container">
                 {props.projects.map(project => {
-                    return <SingleProject key={project.id} project = {project}/>
+                    return <SingleProject key={project.id} project={project} theme={props.theme}/>
                 })}
             </div>
         </React.Fragment>

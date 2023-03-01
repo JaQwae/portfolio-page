@@ -150,9 +150,7 @@
     gap: var(--portfolio-spacing);
 }
 
-.singleProject {
-    background-color: var(--primary-dark-color);
-    box-shadow: var(--box-shadow-format);
+.single-project {
     height: 400px;
     width: 400px;
     padding: 0.5rem;
@@ -175,10 +173,6 @@
     object-fit: cover;
 }
 
-.singleProject:hover{
-    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 100%);
-}
-
 /* hides elements on portfolio page depending on mouse event */
 .hidden-project-state{
     display: none;
@@ -189,21 +183,29 @@
     margin: 1rem;
 }
 
-.icon-link{
-    text-decoration: none;
-    color: var(--tertiary-dark-color);
-}
-
-.icon-link:hover{
-    text-decoration: none;
-    color: var(--primary-dark-color);
-}
-
 /* ---Portfolio Page Light--- */
 .portfolio-buttons-light {
     background-color: var(--secondary-light-color);
     color: var(--tertiary-light-color);
     border-color:var(--tertiary-light-color);
+    box-shadow: var(--box-shadow-light);
+}
+
+#single-project-light{
+    background-color: var(--primary-light-color);
+    box-shadow: var(--box-shadow-light);
+}
+
+#single-project-light:hover{
+    background-image: linear-gradient(45deg, var(--primary-light-color), var(--secondary-light-color) 200%);
+}
+
+.icon-link-light{
+    color: var(--tertiary-light-color);
+}
+
+.icon-link-light:hover{
+    color: var(--primary-light-color);
 }
 
 /* ---Portfolio Page Dark--- */
@@ -211,6 +213,24 @@
     background-color: var(--secondary-dark-color);
     color: var(--tertiary-dark-color);
     border-color:var(--tertiary-dark-color);
+    box-shadow: var(--box-shadow-dark);
+}
+
+#single-project-dark{
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-dark);
+}
+
+#single-project-dark:hover{
+    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 200%);
+}
+
+.icon-link-dark{
+    color: var(--tertiary-dark-color);
+}
+
+.icon-link-dark:hover{
+    color: var(--primary-dark-color);
 }
 
 /* ---Resume Page--- */
@@ -298,6 +318,7 @@
     background-color: var(--secondary-light-color);
     color: var(--tertiary-light-color);
     border-color:var(--tertiary-light-color);
+    box-shadow: var(--box-shadow-light);
 }
 
 #connect-form-submit-button-light span{
@@ -330,6 +351,7 @@
     background-color: var(--secondary-dark-color);
     color: var(--tertiary-dark-color);
     border-color:var(--tertiary-dark-color);
+    box-shadow: var(--box-shadow-dark);
 }
 
 #connect-form-submit-button-dark span{
