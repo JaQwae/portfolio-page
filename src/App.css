@@ -394,4 +394,42 @@
     text-align: center;
 }
 
-/* Add media styling for form for phones */
+/* Styling for desktop */
+@media screen and (max-width: 1695px) {
+
+    #connect-page-title{
+        margin-bottom: 2rem;
+    }
+    
+    .connect-form-layout{
+        padding: 2rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1454px) {
+    .connect-form-layout{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1374px) {
+    .connect-form-layout{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .connect-form-layout{
+        width: 70%;
+        padding: 1rem;
+    }
+} 
+
+/* last query that has the two row format*/
+@media screen and (max-width: 969px) {
+    .connect-form-layout{
+        width: 70%;
+        padding: 0.6rem;
+    }
+} 

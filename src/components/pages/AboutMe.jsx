@@ -1,4 +1,7 @@
-const AboutMe = () => {
+const AboutMe = (props) => {
+
+    console.log(props.theme);
+    
     return (
         <div className='about-me-page page'>
             <h1>About Me Page</h1>
@@ -6,10 +9,13 @@ const AboutMe = () => {
                 <section id="about-me-page-picture-container">
                 </section>
                 <section id='about-me-introduction-container'>
+                    <h3>Intro</h3>
                 </section>
                 <section id='about-me-education-container'>
+                    <h3>Education</h3>
                 </section>
-                <section id='about-me-interest-container'>
+                <section id='about-me-passion-container'>
+                    <h3>Passion</h3>
                 </section>
                 <section id='about-me-location-container'>
                     <h3>Location</h3>
