@@ -40,10 +40,13 @@
 .page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 100vh;
     font-size: 1em;
+}
+
+.page-title{
+    margin: 2rem auto;
 }
 
 /* ---Home Page--- */
@@ -115,14 +118,64 @@
 }
 
 /* ---About Me Page--- */
+#about-me-page{
+    height: 300vh;
+}
 
-.about-me-location-content-container{
+.about-me-page-break {
+    max-width: 90%;
+    opacity: 50;
+}
+
+#about-me-page-content-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.about-me-section-title{
+    margin: 2rem auto;
+}
+
+.about-me-picture-headers{
+    height: 10rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.about-me-text-paragraphs{
+    max-width: 90%;
+}
+
+#about-me-location-content-container{
     display: flex;
 }
 
 .location-map{
-    height: 20rem;
+    height: 15rem;
     box-shadow: var(--box-shadow-format);
+}
+
+#location-information{
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-format);
+}
+
+/* ---About Me Page Light--- */
+#about-me-page-break-light{
+    border: 5px solid var(--secondary-light-color);
+}
+
+/* ---About Me Page Dark--- */
+#about-me-page-break-dark{
+    border: 5px solid var(--secondary-dark-color);
+}
+
+/* ---Responsive design for about me page--- */
+@media screen and (max-width: 1100px) {
+    #about-me-page-content-container{
+        max-width: 70%;
+    }
 }
 
 /* ---Portfolio Page--- */
