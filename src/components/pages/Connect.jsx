@@ -151,7 +151,7 @@ const Connect = (theme) => {
 
   return (
     <div className="page" id="connect-page">
-      <h1 id="connect-page-title">Connect With Me</h1>
+      <h1 className="page-title" id="connect-page-title">Connect With Me</h1>
       <form
         ref={form}
         onSubmit={sendEmail}

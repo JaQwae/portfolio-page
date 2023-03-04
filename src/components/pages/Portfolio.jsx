@@ -25,7 +25,7 @@ const Portfolio = (props) => {
 
     return (
         <div className='portfolio-page page'>
-            <h1>Portfolio Page</h1>
+            <h1 className="page-title">Portfolio Page</h1>
             <ProjectList projects = {projects} theme = {props.theme} handleButtonClick={handleButtonClick} />
         </div>
     )
