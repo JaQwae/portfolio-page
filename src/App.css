@@ -52,6 +52,9 @@
 /* ---Home Page--- */
 .home-page{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 110%);
 }
 
 .html-tag {
@@ -141,6 +144,7 @@
     height: 10rem;
     width: 90%;
     margin-bottom: 1rem;
+    box-shadow: var(--box-shadow-format);
 }
 
 .about-me-text-paragraphs{
@@ -149,16 +153,26 @@
 
 #about-me-location-content-container{
     display: flex;
+    justify-content: center;
+    transform: translate(-5%, 0);
 }
 
-.location-map{
-    height: 15rem;
+.location-map {
+    height: 20rem;
+    width: 50%;
     box-shadow: var(--box-shadow-format);
+    margin-right: 3rem;
 }
 
-#location-information{
+.location-information {
     background-color: var(--primary-dark-color);
     box-shadow: var(--box-shadow-format);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 2rem;
+    height: 8rem;
 }
 
 /* ---About Me Page Light--- */
@@ -166,9 +180,35 @@
     border: 5px solid var(--secondary-light-color);
 }
 
+.about-me-picture-headers-light{
+    box-shadow: var(--box-shadow-light);
+}
+
+.location-map-light{
+    box-shadow: var(--box-shadow-light);
+}
+
+.location-information-light {
+    background-color: var(--primary-light-color);
+    box-shadow: var(--box-shadow-light);
+}
+
 /* ---About Me Page Dark--- */
 #about-me-page-break-dark{
     border: 5px solid var(--secondary-dark-color);
+}
+
+.about-me-picture-headers-dark{
+    box-shadow: var(--box-shadow-dark);
+}
+
+.location-map-dark{
+    box-shadow: var(--box-shadow-dark);
+}
+
+.location-information-dark {
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-dark);
 }
 
 /* ---Responsive design for about me page--- */
@@ -325,10 +365,6 @@
 #connect-page {
     display: flex;
     flex-direction: column;
-}
-
-#connect-page-title{
-    margin-bottom: 6rem;
 }
 
 .connect-form-layout{
