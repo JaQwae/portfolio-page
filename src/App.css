@@ -145,6 +145,9 @@
     width: 90%;
     margin-bottom: 1rem;
     box-shadow: var(--box-shadow-format);
+    object-fit: cover;
+    /* can change for each photo */
+    object-position: 10% 70%;
 }
 
 .about-me-text-paragraphs{
@@ -180,6 +183,10 @@
     border: 5px solid var(--secondary-light-color);
 }
 
+#sub-section-title-light{
+    color: var(--secondary-light-color);
+}
+
 .about-me-picture-headers-light{
     box-shadow: var(--box-shadow-light);
 }
@@ -196,6 +203,10 @@
 /* ---About Me Page Dark--- */
 #about-me-page-break-dark{
     border: 5px solid var(--secondary-dark-color);
+}
+
+#sub-section-title-dark{
+    color: var(--secondary-dark-color);
 }
 
 .about-me-picture-headers-dark{
