@@ -195,6 +195,49 @@
     }
 }
 
+@media screen and (max-width: 740px) {
+    .home-page-first-intro-sentence{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    #home-page-greeting{
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-page-intro-sentence{
+        font-size: 1.9rem;
+        margin: 0;
+    }
+
+    .my-name-on-home-page{
+        font-size: 2.5rem;
+        margin:0;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 3rem;
+    }
+}
+
+/* iphone SE styling */
+@media screen and (max-width: 376px),
+(max-height: 667px) {
+    .home-page{
+        transform: translate(0, 20%);
+    }
+}
 /* ---About Me Page--- */
 #about-me-page{
     height: 300vh;
