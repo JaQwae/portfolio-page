@@ -3,13 +3,17 @@ const Home = (theme) => {
     return (
         <div className='home-page'>
             <div id='main-home-page-content'>
-                <section>
-                        <h2 id='home-page-greeting'>Howdy,</h2>
-                        <h3>My name is JaQwae Ellison,</h3>
-                        <h3>a full stack web developer</h3>
-                </section>
-                <section>
-                    <h6>JavaScript | MERN | C#</h6>
+                <section id="home-page-word-container">
+                        <h1 id='home-page-greeting'>Howdy,</h1>
+                        <h3 className='home-page-intro-sentence home-page-first-intro-sentence'>
+                            My name is
+                            <h3 className="home-page-first-intro-sentence my-name-on-home-page" id={`my-name-on-home-page-${theme.theme}`}>
+                                JaQwae Ellison
+                            </h3>
+                            ,
+                        </h3>
+                        <h3 className='home-page-intro-sentence'>a full stack web developer</h3>
+                        <h6 id='home-page-tech-stack'>JavaScript | MERN | C#</h6>
                 </section>
                 <section className="social-media-icon-container">
                     <a href="https://www.linkedin.com/in/jaqwae-ellison/" target="_blank" rel="noreferrer noopener">
@@ -32,10 +36,6 @@ const Home = (theme) => {
                     </a>
                 </section>
             </div>
-            {/* <section id='bottom-html-design'>
-                <p className='html-tag'>&lt;/body&gt;</p>
-                <p className='html-tag'>&lt;/html&gt;</p>
-            </section> */}
         </div>
     )
 };

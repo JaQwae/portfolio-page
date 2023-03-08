@@ -53,17 +53,44 @@
 .home-page{
     display: flex;
     justify-content: center;
-    align-items: center;
-    transform: translate(0, 110%);
+    transform: translate(0, 60%);
 }
 
-.html-tag {
-    margin: 0;
+#home-page-word-container{
+    display: flex;
+    flex-direction: column;
 }
 
 #home-page-greeting{
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin-bottom: 1rem;
 }
+
+.home-page-intro-sentence{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.home-page-first-intro-sentence{
+    display: flex;
+    align-items: center;
+}
+
+.my-name-on-home-page{
+    margin-left: 0.5rem;
+    font-size: 4rem;
+}
+
+#home-page-tech-stack{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
 .social-media-icon-container{
     display: flex;
     justify-content: center;
@@ -71,7 +98,8 @@
 
 .social-media-icons{
     padding: 1rem;
-    font-size: 2rem;
+    margin: 2rem;
+    font-size: 4rem;
     border-radius: 50%;
     /* used for hover animation on social icons */
     position: relative;
@@ -112,12 +140,59 @@
     --n: 4;
 }
 
-#social-media-icons-dark{
-    color: var(--tertiary-dark-color);
+
+/* ---Home Page Light--- */
+#my-name-on-home-page-light{
+    color: var(--secondary-light-color);
 }
 
 #social-media-icons-light{
     color: var(--tertiary-light-color);
+}
+
+/* ---Home Page Dark--- */
+#my-name-on-home-page-dark{
+    color: var(--secondary-dark-color);
+}
+#social-media-icons-dark{
+    color: var(--tertiary-dark-color);
+}
+
+/* ---Responsive design for home page--- */
+@media screen and (max-height: 1100px) {
+    .home-page{
+        transform: translate(0, 50%);
+    }
+}
+
+@media screen and (max-height: 940px) {
+    .home-page{
+        transform: translate(0, 40%);
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .home-page{
+        transform: translate(0, 30%);
+    }
+}
+
+@media screen and (max-height: 730px) {
+    .home-page{
+        transform: translate(0, 20%);
+    }
+}
+
+@media screen and (max-height: 730px) {
+    .home-page{
+        transform: translate(0, 20%);
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .home-page{
+        transform: translate(0, 0%);
+    }
 }
 
 /* ---About Me Page--- */
