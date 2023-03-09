@@ -26,17 +26,6 @@
 }
 
 /* ---All Pages--- */
-
-/* light mode settings for every page*/
-.light {
-    color: var(--tertiary-light-color);
-}
-
-/* dark mode settings for every page */
-.dark {
-    color: var(--tertiary-dark-color);
-}
-
 .page {
     display: flex;
     flex-direction: column;
@@ -48,6 +37,18 @@
 .page-title{
     margin: 2rem auto;
 }
+
+/* light mode settings for every page*/
+.light {
+    color: var(--tertiary-light-color);
+}
+
+/* dark mode settings for every page */
+.dark {
+    color: var(--tertiary-dark-color);
+}
+
+
 
 /* ---Home Page--- */
 .home-page{
@@ -154,6 +155,7 @@
 #my-name-on-home-page-dark{
     color: var(--secondary-dark-color);
 }
+
 #social-media-icons-dark{
     color: var(--tertiary-dark-color);
 }
@@ -232,17 +234,13 @@
 }
 
 /* iphone SE styling */
-@media screen and (max-width: 376px),
-(max-height: 667px) {
+@media screen and (max-width: 376px),(max-height: 667px) {
     .home-page{
         transform: translate(0, 20%);
     }
 }
-/* ---About Me Page--- */
-#about-me-page{
-    height: 300vh;
-}
 
+/* ---About Me Page--- */
 .about-me-page-break {
     max-width: 90%;
     opacity: 50;
@@ -270,9 +268,15 @@
 
 .about-me-text-paragraphs{
     max-width: 90%;
+    margin-top: 1rem;
 }
 
-#about-me-location-content-container{
+.sub-section-title{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.about-me-location-content-container{
     display: flex;
     justify-content: center;
     transform: translate(-5%, 0);
@@ -283,6 +287,7 @@
     width: 50%;
     box-shadow: var(--box-shadow-format);
     margin-right: 3rem;
+    margin-bottom: 2rem;
 }
 
 .location-information {
@@ -293,6 +298,7 @@
     justify-content: center;
     align-self: center;
     padding: 2rem;
+    margin-bottom: 2rem;
     height: 8rem;
 }
 
@@ -341,8 +347,31 @@
 }
 
 /* ---Responsive design for about me page--- */
+@media screen and (max-width: 1200px) {
+    .about-me-location-content-container{
+        flex-direction: column;
+    }
+
+    .location-map {
+        width: 80%;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .location-map {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .location-map {
+        margin-left: 1rem;
+    }
+}
+
 @media screen and (max-width: 1100px) {
-    #about-me-page-content-container{
+    .about-me-page-content-container{
         max-width: 70%;
     }
 }

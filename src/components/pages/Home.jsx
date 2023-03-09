@@ -22,7 +22,7 @@ const Home = (theme) => {
                             <span></span><span></span><span></span><span></span>
                         </i>
                     </a>
-                    <a href="https://github.com/JaQwae" rel="noreferrer noopener">
+                    <a href="https://github.com/JaQwae" target="_blank" rel="noreferrer noopener">
                         <i className="fa-brands fa-github social-media-icons" id={`social-media-icons-${theme.theme}`}>
                             {/* Gives hover animation over links */}
                             <span></span><span></span><span></span><span></span>
