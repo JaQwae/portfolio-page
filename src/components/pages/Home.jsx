@@ -7,9 +7,9 @@ const Home = (theme) => {
                         <h1 id='home-page-greeting'>Howdy,</h1>
                         <h3 className='home-page-intro-sentence home-page-first-intro-sentence'>
                             My name is
-                            <h3 className="home-page-first-intro-sentence my-name-on-home-page" id={`my-name-on-home-page-${theme.theme}`}>
+                            <p className="home-page-first-intro-sentence my-name-on-home-page" id={`my-name-on-home-page-${theme.theme}`}>
                                 JaQwae Ellison
-                            </h3>
+                            </p>
                             ,
                         </h3>
                         <h3 className='home-page-intro-sentence'>a full stack web developer</h3>
