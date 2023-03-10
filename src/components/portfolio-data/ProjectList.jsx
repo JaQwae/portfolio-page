@@ -6,10 +6,30 @@ export default function ProjectList (props) {
     return(
         <React.Fragment>
             <div className= {`portfolio-buttons-container`} id={`portfolio-buttons-container-${props.theme}`}>
-                <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='all' onClick={props.handleButtonClick}>All</button>
-                <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='front-end' onClick={props.handleButtonClick}>Front-End</button>
-                <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='back-end' onClick={props.handleButtonClick}>Back-End</button>
-                <button className={`portfolio-buttons portfolio-buttons-${props.theme}`} value='full-stack' onClick={props.handleButtonClick}>Full-Stack</button>
+                <button 
+                    className={`portfolio-buttons portfolio-buttons-${props.theme}`} 
+                    value='all' 
+                    onClick={props.handleButtonClick}>
+                        All
+                </button>
+                <button 
+                    className={`portfolio-buttons portfolio-buttons-${props.theme}`} 
+                    value='front-end' 
+                    onClick={props.handleButtonClick}>
+                        Front-End
+                </button>
+                <button 
+                    className={`portfolio-buttons portfolio-buttons-${props.theme}`} 
+                    value='back-end' 
+                    onClick={props.handleButtonClick}>
+                        Back-End
+                </button>
+                <button 
+                    className={`portfolio-buttons portfolio-buttons-${props.theme}`} 
+                    value='full-stack' 
+                    onClick={props.handleButtonClick}>
+                        Full-Stack
+                </button>
             </div>
 
             <div className="project-container">

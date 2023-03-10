@@ -229,10 +229,6 @@ const Connect = (theme) => {
             id={`connect-form-submit-button-${theme.theme}`}
           >
             Submit
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
           </button>
         </section>
         <section className="connect-form-error-message-container">
