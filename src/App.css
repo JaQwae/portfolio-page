@@ -23,6 +23,7 @@
     --button-border: 0.2em solid;
     --button-text-transform: uppercase;
     --button-letter-spacing: 0.1em;
+    --button-hover-transition-effect: 0.5s;
 }
 
 /* ---All Pages--- */
@@ -396,7 +397,7 @@
 }
 
 .portfolio-buttons:hover{
-    transition-duration: 0.5s;
+    transition-duration: var(--button-hover-transition-effect);
 }
 
 .project-container{
@@ -444,6 +445,10 @@
     margin: 8rem 2rem 2rem;
 }
 
+.icon-link:hover {
+    transition-duration: var(--button-hover-transition-effect);
+}
+
 /* ---Portfolio Page Light--- */
 .portfolio-buttons-light {
     background-color: var(--secondary-light-color);
@@ -453,7 +458,7 @@
 }
 
 .portfolio-buttons-light:hover {
-    background-color: var(--tertiary-light-color);
+    background-image: linear-gradient(45deg, var(--primary-light-color), var(--secondary-light-color) 200%);
     color: var(--secondary-light-color);
     border-color:var(--secondary-light-color);
     box-shadow: var(--box-shadow-light);
@@ -485,7 +490,7 @@
 }
 
 .portfolio-buttons-dark:hover {
-    background-color: var(--tertiary-dark-color);
+    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 200%);
     color: var(--secondary-dark-color);
     border-color:var(--secondary-dark-color);
     box-shadow: var(--box-shadow-dark);
@@ -624,6 +629,10 @@
     height: 6rem;
 }
 
+.connect-form-submit-button:hover{
+    transition-duration: var(--button-hover-transition-effect);
+}
+
 #connect-form-error-message{
     color: red;
     text-align: center;
@@ -648,7 +657,7 @@
 }
 
 #connect-form-submit-button-light:hover {
-    background-color: var(--tertiary-light-color);
+    background-image: linear-gradient(45deg, var(--primary-light-color), var(--secondary-light-color) 200%);
     color: var(--secondary-light-color);
     border-color:var(--secondary-light-color);
     box-shadow: var(--box-shadow-light);
@@ -684,7 +693,7 @@
 }
 
 #connect-form-submit-button-dark:hover {
-    background-color: var(--tertiary-dark-color);
+    background-image: linear-gradient(45deg, var(--primary-dark-color), var(--secondary-dark-color) 200%);
     color: var(--secondary-dark-color);
     border-color:var(--secondary-dark-color);
     box-shadow: var(--box-shadow-dark);
