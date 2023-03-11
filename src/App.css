@@ -167,7 +167,7 @@
 /* ---Responsive design for home page--- */
 @media screen and (max-height: 1100px) {
     .home-page{
-        transform: translate(0, 50%);
+        transform: translate(0, 40%);
     }
 }
 
@@ -189,19 +189,13 @@
     }
 }
 
-@media screen and (max-height: 730px) {
-    .home-page{
-        transform: translate(0, 20%);
-    }
-}
-
 @media screen and (max-height: 700px) {
     .home-page{
         transform: translate(0, 0%);
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 777px) {
     .home-page-first-intro-sentence{
         display: flex;
         flex-direction: column;
@@ -209,7 +203,7 @@
     }
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 684px) {
     #home-page-greeting{
         font-size: 4rem;
         margin-bottom: 0.5rem;
@@ -223,6 +217,32 @@
     .my-name-on-home-page{
         font-size: 2.5rem;
         margin:0;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    #home-page-greeting{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-page-intro-sentence{
+        font-size: 1.2rem;
+    }
+
+    .my-name-on-home-page{
+        font-size: 2.2rem;
     }
 
     #home-page-tech-stack{
@@ -374,9 +394,9 @@
     }
 }
 
-@media screen and (max-width: 540px) {
-    .location-map {
-        margin-left: 1rem;
+@media screen and (max-width: 600px) {
+    #about-me-page-content-container{
+        max-width: 80%;
     }
 }
 
