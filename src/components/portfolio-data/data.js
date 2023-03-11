@@ -51,7 +51,7 @@ export const data = [
     },
     {
         id: 6,
-        category: "full-stack",
+        category: "back-end",
         title: "Team Profile Generator",
         image: `${teamProfileGeneratorScreenshot}`,
         altText: "Team Profile Application",
