@@ -61,7 +61,7 @@ export const data = [
     {
         id: 7,
         category: "front-end",
-        title: "Password-Generator",
+        title: "Password Generator",
         image: "https://github.com/JaQwae/Password-Generator/blob/main/images/passwordGeneratorBefore.png?raw=true",
         altText: "Password Generator Application",
         deployedLink: "https://jaqwae.github.io/Password-Generator/",

@@ -1,5 +1,6 @@
 import React from "react";
 import aboutMePhoto from "../../assets/images/jaqwaeresized2.jpg"
+import videographyPhoto from "../../assets/images/videoography photo.jpg"
 
 const AboutMe = (props) => {
     
@@ -32,7 +33,12 @@ const AboutMe = (props) => {
                 <section id='about-me-passion-container'>
                     <h3 className="about-me-section-title">Passion</h3>
                     <h5 className="sub-section-title" id={`sub-section-title-${props.theme}`}>Videography</h5>
-                    <img id='about-me-videography' className={`about-me-picture-headers about-me-picture-headers-${props.theme}`} src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="JaQwae Ellison"></img>
+                    <img
+                        id='about-me-videography'
+                        className={`about-me-picture-headers about-me-picture-headers-${props.theme}`}
+                        src={videographyPhoto}
+                        alt="JaQwae Ellison">
+                    </img>
                     <p className='about-me-text-paragraphs'>In my free time, I help produce news content for various local stations. I am adept in learning and operating new equipment, setting up shots and interviews, as well as shooting sports highlights. In addition I am experienced in Adobe Creative Suite.</p>
                     {/* <h5 className="sub-section-title" id={`sub-section-title-${props.theme}`}>Wellness</h5>
                     <img id='about-me-fitness-photo' className={`about-me-picture-headers about-me-picture-headers-${props.theme}`} src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="JaQwae Ellison"></img>

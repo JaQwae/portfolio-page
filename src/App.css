@@ -293,7 +293,11 @@
 
 #about-me-profile-picture{
     height: 14rem;
-    object-position: 10% 5%
+    object-position: 10% 5%;
+}
+
+#about-me-videography{
+    object-position: 10% 52%
 }
 
 .about-me-text-paragraphs{
@@ -559,25 +563,6 @@
 
 @media screen and (max-width: 1659px) {
     .single-project {
-        height: 300px;
-        width: 300px;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .project-images{
-        height: 230px;
-        width: 220px;
-    }
-
-    .project-icons{
-        font-size: 6rem;
-        margin: 6rem 1rem 1rem;
-    }
-}
-
-@media screen and (max-width: 1659px) {
-    .single-project {
         height: 250px;
         width: 250px;
         padding: 0.5rem;
@@ -587,6 +572,11 @@
     .project-images{
         height: 180px;
         width: 170px;
+    }
+
+    .project-icons{
+        font-size: 4rem;
+        margin: 5rem 1rem 1rem;
     }
 }
 
