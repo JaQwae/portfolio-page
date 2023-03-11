@@ -695,6 +695,7 @@
 .all-input-boxes-light{
     background-color: var(--primary-light-color);
     border-bottom: 3px solid var(--secondary-light-color);
+    color:var(--tertiary-light-color);
 }
 
 #connect-form-submit-button-light{
@@ -720,6 +721,7 @@
 .all-input-boxes-dark{
     background-color: var(--primary-dark-color);
     border-bottom: 3px solid var(--secondary-dark-color);
+    color:var(--tertiary-dark-color);
 }
 
 #connect-form-submit-button-dark{
