@@ -291,6 +291,11 @@
     object-position: 10% 70%;
 }
 
+#about-me-profile-picture{
+    height: 14rem;
+    object-position: 10% 5%
+}
+
 .about-me-text-paragraphs{
     max-width: 90%;
     margin-top: 1rem;

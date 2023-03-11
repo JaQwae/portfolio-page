@@ -1,3 +1,6 @@
+import React from "react";
+import aboutMePhoto from "../../assets/images/jaqwaeresized2.jpg"
+
 const AboutMe = (props) => {
     
     return (
@@ -5,7 +8,12 @@ const AboutMe = (props) => {
             <h1 className="page-title">About Me Page</h1>
             <div id="about-me-page-content-container">
                 <section id ="about-me-page-picture-container">
-                    <img id='about-me-profile-picture' className={`about-me-picture-headers about-me-picture-headers-${props.theme}`} src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="JaQwae Ellison"></img>
+                    <img 
+                        id='about-me-profile-picture' 
+                        className={`about-me-picture-headers about-me-picture-headers-${props.theme}`} 
+                        src={aboutMePhoto}
+                        alt="JaQwae Ellison">
+                    </img>
                 </section>
                 <section id='about-me-introduction-container'>
                     <p className='about-me-text-paragraphs'>I am a 25-year-old freelance full-stack web developer that specializes in JavaScript, C#, and Python. As the learning never stops, I am seeking roles and opportunities that will continue to challenge and expand my knowledge of programming and the tech industry at large. With strong time management skills, I am also detail oriented and a team player that can adapt to the ever-evolving trends and demands of the field.</p>

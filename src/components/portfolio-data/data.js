@@ -1,3 +1,8 @@
+import noteTakerScreenshot from "../../assets/images/Note Take screenshot.png"
+import socialApiScreenshot from "../../assets/images/Social Networking API screen shot 1.png"
+import teamProfileGeneratorScreenshot from "../../assets/images/Team Profile Generator screen shot.png"
+import eCommerceBackendScreenshot from "../../assets/images/E-Commerce Backend Screenshot.png"
+
 export const data = [
     {
         id: 1,
@@ -12,7 +17,7 @@ export const data = [
         id: 2,
         category: "back-end",
         title: "Social Network API",
-        image: "image-2",
+        image: `${socialApiScreenshot}`,
         altText: "Social Network API Application",
         deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Social-Network-API"
@@ -21,7 +26,7 @@ export const data = [
         id: 3,
         category: "full-stack",
         title: "Note Taker",
-        image: "image-3",
+        image: `${noteTakerScreenshot}`,
         altText: "Note Taker Application",
         deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Note-Taker"
@@ -46,9 +51,9 @@ export const data = [
     },
     {
         id: 6,
-        category: "back-end",
+        category: "full-stack",
         title: "Team Profile Generator",
-        image: "image-6",
+        image: `${teamProfileGeneratorScreenshot}`,
         altText: "Team Profile Application",
         deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Team-Profile-Generator"
@@ -66,7 +71,7 @@ export const data = [
         id: 8,
         category: "back-end",
         title: "E-Commerce Backend",
-        image: "image-8",
+        image: `${eCommerceBackendScreenshot}`,
         altText: "E-Commerce Backend Application",
         deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/E-commerce-Back-End"
