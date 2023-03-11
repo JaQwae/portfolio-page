@@ -37,6 +37,7 @@
 
 .page-title{
     margin: 2rem auto;
+    font-family: 'Titan One', cursive;
 }
 
 /* light mode settings for every page*/
@@ -48,8 +49,6 @@
 .dark {
     color: var(--tertiary-dark-color);
 }
-
-
 
 /* ---Home Page--- */
 .home-page{
@@ -68,12 +67,14 @@
     justify-content: center;
     font-size: 6rem;
     margin-bottom: 1rem;
+    font-family: 'Titan One', cursive;
 }
 
 .home-page-intro-sentence{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: 'Titan One', cursive;
 }
 
 .home-page-first-intro-sentence{
@@ -82,15 +83,17 @@
 }
 
 .my-name-on-home-page{
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
     font-size: 4rem;
+    font-family: 'Tilt Prism', cursive;
 }
 
 #home-page-tech-stack{
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 1.5rem;
+    font-family: 'Stick No Bills', sans-serif;
 }
 
 .social-media-icon-container{
@@ -255,6 +258,7 @@
 
 .about-me-section-title{
     margin: 2rem auto;
+    font-family: 'Stick No Bills', sans-serif;
 }
 
 .about-me-picture-headers{
@@ -270,11 +274,14 @@
 .about-me-text-paragraphs{
     max-width: 90%;
     margin-top: 1rem;
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.02rem;
 }
 
 .sub-section-title{
     margin-bottom: 1rem;
     margin-top: 2rem;
+    font-family: 'Special Elite', cursive;
 }
 
 .about-me-location-content-container{
@@ -301,6 +308,8 @@
     padding: 2rem;
     margin-bottom: 2rem;
     height: 8rem;
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.02rem;
 }
 
 /* ---About Me Page Light--- */
@@ -394,6 +403,7 @@
     border-radius: var(--button-radius);
     text-transform: var(--button-text-transform);
     letter-spacing: var(--button-letter-spacing);
+    font-family: 'Stick No Bills', sans-serif;
 }
 
 .portfolio-buttons:hover{
@@ -420,6 +430,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Stick No Bills', sans-serif;
 }
 
 .project-images{
@@ -429,6 +440,7 @@
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .hover-project-state{
@@ -629,6 +641,18 @@
     height: 6rem;
 }
 
+.connect-form-submit-button{
+    border: var(--button-border);
+    border-radius: var(--button-radius);
+    text-transform: var(--button-text-transform);
+    letter-spacing: var(--button-letter-spacing);
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    margin: 4rem auto 2rem;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
 .connect-form-submit-button:hover{
     transition-duration: var(--button-hover-transition-effect);
 }
@@ -636,6 +660,10 @@
 #connect-form-error-message{
     color: red;
     text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: var(--button-letter-spacing);
+    font-size: 1.2rem;
 }
 
 /* ---Contact page light--- */
@@ -672,17 +700,6 @@
 .all-input-boxes-dark{
     background-color: var(--primary-dark-color);
     border-bottom: 3px solid var(--secondary-dark-color);
-}
-
-.connect-form-submit-button{
-    border: var(--button-border);
-    border-radius: var(--button-radius);
-    text-transform: var(--button-text-transform);
-    letter-spacing: var(--button-letter-spacing);
-    position: relative;
-    overflow: hidden;
-    width: 50%;
-    margin: 4rem auto 2rem
 }
 
 #connect-form-submit-button-dark{
