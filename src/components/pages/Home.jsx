@@ -28,7 +28,7 @@ const Home = (theme) => {
                             <span></span><span></span><span></span><span></span>
                         </i>
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/CodingOg" target="_blank" rel="noreferrer noopener">
                         <i className="fa-brands fa-twitter social-media-icons" id={`social-media-icons-${theme.theme}`}>
                             {/* Gives hover animation over links */}
                             <span></span><span></span><span></span><span></span>
