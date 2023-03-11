@@ -46,21 +46,21 @@ export const data = [
     },
     {
         id: 6,
-        category: "front-end",
-        title: "project-6",
+        category: "back-end",
+        title: "Team Profile Generator",
         image: "image-6",
-        altText: "alt-text-6",
+        altText: "Team Profile Application",
         deployedLink: "",
-        gitHubLink: ""
+        gitHubLink: "https://github.com/JaQwae/Team-Profile-Generator"
     },
     {
         id: 7,
         category: "front-end",
-        title: "project-7",
-        image: "image-7",
-        altText: "alt-text-7",
-        deployedLink: "",
-        gitHubLink: ""
+        title: "Password-Generator",
+        image: "https://github.com/JaQwae/Password-Generator/blob/main/images/passwordGeneratorBefore.png?raw=true",
+        altText: "Password Generator Application",
+        deployedLink: "https://jaqwae.github.io/Password-Generator/",
+        gitHubLink: "https://github.com/JaQwae/Password-Generator"
     },
     {
         id: 8,
