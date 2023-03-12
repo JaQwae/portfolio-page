@@ -56,11 +56,11 @@ const App = () => {
           <SideNavBar />
           <Routes>
             <Route path='/' element ={<Home theme={`${theme}`}/>} />
-            <Route path='/home' element ={<Home theme={`${theme}`}/>} />
             <Route path='/about-me' element ={<AboutMe theme={`${theme}`}/>} />
             <Route path='/portfolio' element ={<Portfolio theme={`${theme}`}/>} />
             <Route path='/resume' element ={<Resume theme={`${theme}`}/>} />
             <Route path='/connect' element ={<Connect theme={`${theme}`}/>} />
+            <Route path='*' element ={<Home theme={`${theme}`}/>}/>
           </Routes>
         </Router>
         <Brightness6OutlinedIcon onClick={toggleTheme} className="position-absolute top-0 end-0 theme-icon-button"/ >

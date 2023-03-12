@@ -20,8 +20,8 @@ const SideNavBar = (theme) => {
 
     >
         <SideNav.Toggle />
-        <SideNav.Nav defaultSelected='home'>
-            <NavItem eventKey='home'>
+        <SideNav.Nav defaultSelected=''>
+            <NavItem eventKey=''>
                 <NavIcon>
                     <i className='side-nav-bar-icon fa fa-fw fa-home'/>
                 </NavIcon>
