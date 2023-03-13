@@ -14,7 +14,7 @@ const SideNavBar = (theme) => {
 
     return <SideNav
         onSelect={selected=> {
-            navigate('/'+selected);
+            navigate('/portfolio-page/'+selected);
         }}
         className='side-nav-bar'
 
