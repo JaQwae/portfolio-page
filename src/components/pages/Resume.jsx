@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../../assets/images/Jay Tech Resume.docx.pdf";
+import resume from "../../assets/images/Tech Resume 3122023.docx.pdf";
 
 const Resume = (theme) => {
     return (
