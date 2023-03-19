@@ -12,18 +12,6 @@ export default function SingleProject (props) {
         setIsHovering(false);
     };
 
-    // const[hasDeployedLink, setHasDeployedLink] = useState(true);
-
-    // function hasADeployedLink (props) {
-        // const deployedLink = props.project.deployedLink;
-    //     if (props.project.deployedLink !== '') {
-    //         setHasDeployedLink(true);
-    //     };
-    //     if (props.project.deployedLink === '') {
-    //         setHasDeployedLink(false);
-    //     };
-    // }
-
     return (
             <div className="single-project" id={`single-project-${props.theme}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 {/* active when mouse is not over the element */}

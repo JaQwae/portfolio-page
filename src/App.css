@@ -461,7 +461,6 @@
 .single-project {
     height: 400px;
     width: 400px;
-    padding: 0.5rem;
     margin-bottom: 1rem;
 }
 
@@ -475,11 +474,9 @@
 }
 
 .project-images{
-    height: 330px;
-    width: 320px;
+    height: 357px;
+    width: 400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     object-fit: cover;
     font-family: 'Playfair Display SC', serif;
 }
@@ -577,13 +574,11 @@
     .single-project {
         height: 250px;
         width: 250px;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
     }
 
     .project-images{
-        height: 180px;
-        width: 170px;
+        height: 210px;
+        width: 250px;
     }
 
     .project-icons{
