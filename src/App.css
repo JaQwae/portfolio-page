@@ -395,6 +395,14 @@
         width: 80%;
         margin-left: 3rem;
     }
+
+    .location-information {
+        width: 70%;
+    }
+
+    .location-information-text-content{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1100px) {
