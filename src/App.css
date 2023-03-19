@@ -618,6 +618,31 @@
     box-shadow: var(--box-shadow-light);
 }
 
+/* ---Responsive design for portfolio page--- */
+@media screen and (max-width: 1400px) {
+    .resume-container{
+        width:60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .resume-container{
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .resume-container{
+        height:75vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resume-container{
+        height:50vh;
+    }
+}
+
 /* ---Connection Page--- */
 
 /* connect page format */
