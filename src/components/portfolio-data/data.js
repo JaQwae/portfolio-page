@@ -10,7 +10,7 @@ export const data = [
         title: "Work-Day Scheduler",
         image: "https://github.com/JaQwae/workday-scheduler/raw/main/images/workdayScreenshot.png",
         altText: "Work Day Application",
-        deployedLink: "https://jaqwae.github.io/workday-scheduler/",
+        deployedLink: "https://jaqwae.github.io/Workday-Scheduler/",
         gitHubLink: "https://github.com/JaQwae/workday-scheduler"
     },
     {
