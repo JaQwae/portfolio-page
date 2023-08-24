@@ -17,7 +17,7 @@ const AboutMe = (props) => {
                     </img>
                 </section>
                 <section id='about-me-introduction-container'>
-                    <p className='about-me-text-paragraphs'>I am a 25-year-old freelance full-stack web developer that specializes in JavaScript, C#, and Python. As the learning never stops, I am seeking roles and opportunities that will continue to challenge and expand my knowledge of programming and the tech industry at large. With strong time management skills, I am also detail oriented and a team player that can adapt to the ever-evolving trends and demands of the field.</p>
+                    <p className='about-me-text-paragraphs'>I am a 26-year-old freelance full-stack web developer that specializes in JavaScript, amd Java. As the learning never stops, I am seeking roles and opportunities that will continue to challenge and expand my knowledge of programming and the tech industry at large. With strong time management skills, I am also detail oriented and a team player that can adapt to the ever-evolving trends and demands of the field.</p>
                 </section>
                 <hr className="about-me-page-break" id={`about-me-page-break-${props.theme}`}></hr>
                 <section id='about-me-education-container'>

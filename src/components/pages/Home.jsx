@@ -13,7 +13,7 @@ const Home = (theme) => {
                             ,
                         </h3>
                         <h3 className='home-page-intro-sentence'>a full stack web developer</h3>
-                        <h6 id='home-page-tech-stack'>JavaScript | MERN | C#</h6>
+                        <h6 id='home-page-tech-stack'>JavaScript | Java | MERN</h6>
                 </section>
                 <section className="social-media-icon-container">
                     <a href="https://www.linkedin.com/in/jaqwae-ellison/" target="_blank" rel="noreferrer noopener">
@@ -33,6 +33,7 @@ const Home = (theme) => {
                             {/* Gives hover animation over links */}
                             <span></span><span></span><span></span><span></span>
                         </i>
+                        
                     </a>
                 </section>
             </div>
