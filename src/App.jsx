@@ -53,7 +53,7 @@ const App = () => {
       
       <ThemeProvider theme={isDark?createTheme(light):createTheme(dark)}>
         <Router>
-          <SideNavBar />
+          <SideNavBar theme={`${theme}`}/>
           <Routes>
             <Route path='/portfolio-page/' element ={<Home theme={`${theme}`}/>} />
             <Route path='/portfolio-page/about-me' element ={<AboutMe theme={`${theme}`}/>} />

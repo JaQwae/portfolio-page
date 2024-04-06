@@ -6,38 +6,51 @@ import SideNav, {
 } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { useNavigate } from 'react-router-dom';
+// import {useState} from 'react'
 import '../assets/styles/sideNavBar.css';
 
 const SideNavBar = (theme) => {
-    
+
+    let currentTheme = theme.theme;
     const navigate = useNavigate();
+
+    function colorTheme(theme) {
+        let color = "";
+
+        if (theme === 'dark') {
+            color = "#7D84B2"
+            return color;
+        } else {
+            color = "#25CED1"
+            return color;
+        }
+    }
 
     return <SideNav
         onSelect={selected=> {
             navigate('/portfolio-page/'+selected);
         }}
         className='side-nav-bar'
-
     >
         <SideNav.Toggle />
-        <SideNav.Nav defaultSelected=''>
+        <SideNav.Nav defaultSelected='' >
             <NavItem eventKey=''>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa fa-fw fa-home'/>
+                    <i className='side-nav-bar-icon fa fa-fw fa-home' style={{color:colorTheme(theme.theme)}}/>
                 </NavIcon>
-                <NavText>Home</NavText>
+                <NavText style={{color:colorTheme(theme.theme)}}>Home</NavText>
             </NavItem>
             <NavItem eventKey='about-me'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-solid fa-address-card '/>
+                    <i className='side-nav-bar-icon fa-solid fa-address-card' style={{color:colorTheme(theme.theme)}}/>
                 </NavIcon>
-                <NavText>About Me</NavText>
+                <NavText style={{color:colorTheme(theme.theme)}}>About Me</NavText>
             </NavItem>
             <NavItem eventKey='experience'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-solid fa-briefcase'/>
+                    <i className='side-nav-bar-icon fa-solid fa-briefcase' style={{color:colorTheme(theme.theme)}}/>
                 </NavIcon>
-                <NavText>Experience</NavText>
+                <NavText style={{color:colorTheme(theme.theme)}}>Experience</NavText>
                     <NavItem eventKey='portfolio'>
                         <NavText>Portfolio</NavText>
                     </NavItem>
@@ -48,9 +61,9 @@ const SideNavBar = (theme) => {
             </NavItem>
             <NavItem eventKey='connect'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-sharp fa-solid fa-circle-nodes'/>
+                    <i className='side-nav-bar-icon fa-sharp fa-solid fa-circle-nodes' style={{color:colorTheme(theme.theme)}}/>
                 </NavIcon>
-                <NavText>Connect</NavText>
+                <NavText style={{color:colorTheme(theme.theme)}}>Connect</NavText>
             </NavItem>
         </SideNav.Nav>
     </SideNav>

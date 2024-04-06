@@ -1,5 +1,4 @@
 const Home = (theme) => {
-    
     return (
         <div className='home-page'>
             <div id='main-home-page-content'>

@@ -1,9 +1,11 @@
 /* whole nav bar*/
 .side-nav-bar {
     background: transparent;
+    color: black;
 }
 
 /* all icons */
 .side-nav-bar-icon {
     font-size: 1.5rem;
 }
+
