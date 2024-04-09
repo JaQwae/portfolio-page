@@ -36,21 +36,21 @@ const SideNavBar = (theme) => {
         <SideNav.Nav defaultSelected='' >
             <NavItem eventKey=''>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa fa-fw fa-home' style={{color:colorTheme(theme.theme)}}/>
+                    <i className='side-nav-bar-icon fa fa-fw fa-home' style={{color:colorTheme(currentTheme)}}/>
                 </NavIcon>
-                <NavText style={{color:colorTheme(theme.theme)}}>Home</NavText>
+                <NavText style={{color:colorTheme(currentTheme)}}>Home</NavText>
             </NavItem>
             <NavItem eventKey='about-me'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-solid fa-address-card' style={{color:colorTheme(theme.theme)}}/>
+                    <i className='side-nav-bar-icon fa-solid fa-address-card' style={{color:colorTheme(currentTheme)}}/>
                 </NavIcon>
-                <NavText style={{color:colorTheme(theme.theme)}}>About Me</NavText>
+                <NavText style={{color:colorTheme(currentTheme)}}>About Me</NavText>
             </NavItem>
             <NavItem eventKey='experience'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-solid fa-briefcase' style={{color:colorTheme(theme.theme)}}/>
+                    <i className='side-nav-bar-icon fa-solid fa-briefcase' style={{color:colorTheme(currentTheme)}}/>
                 </NavIcon>
-                <NavText style={{color:colorTheme(theme.theme)}}>Experience</NavText>
+                <NavText style={{color:colorTheme(currentTheme)}}>Experience</NavText>
                     <NavItem eventKey='portfolio'>
                         <NavText>Portfolio</NavText>
                     </NavItem>
@@ -61,9 +61,9 @@ const SideNavBar = (theme) => {
             </NavItem>
             <NavItem eventKey='connect'>
                 <NavIcon>
-                    <i className='side-nav-bar-icon fa-sharp fa-solid fa-circle-nodes' style={{color:colorTheme(theme.theme)}}/>
+                    <i className='side-nav-bar-icon fa-sharp fa-solid fa-circle-nodes' style={{color:colorTheme(currentTheme)}}/>
                 </NavIcon>
-                <NavText style={{color:colorTheme(theme.theme)}}>Connect</NavText>
+                <NavText style={{color:colorTheme(currentTheme)}}>Connect</NavText>
             </NavItem>
         </SideNav.Nav>
     </SideNav>
